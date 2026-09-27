@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://megacabletijuanabcmx.github.io/megacable-tijuana/sitemap.xml
