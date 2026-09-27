@@ -85,24 +85,23 @@ a {
 /* HERO */
 
 .hero {
-  min-height: 620px;
-  display: flex;
-  align-items: center;
-  padding: 70px 7%;
-  background:
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(64,126,201,.35),
-      transparent 35%
-    ),
-    linear-gradient(
-      135deg,
-      #002752,
-      #0b4e91,
-      #407ec9
-    );
-  color: white;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 70px 7%;
+    
+    /* Agregamos tu imagen aquí combinada con un degradado oscuro para que tus textos blancos se sigan leyendo perfecto */
+    background: linear-gradient(135deg, rgba(0, 43, 114, 0.85), rgba(11, 78, 145, 0.75)), url('portada.jpg');
+  
+    
+    /* ESTAS TRES LÍNEAS SON LAS QUE HACEN QUE LA PORTADA OCUPE TODO EL ANCHO DE FORMA RESPONSIVA */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    
+    color: white;
 }
+
 
 .hero-content {
   max-width: 750px;
