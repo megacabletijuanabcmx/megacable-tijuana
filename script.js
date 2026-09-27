@@ -11,7 +11,7 @@ const paquetes = [
       "Fibra óptica",
       "Velocidad simétrica",
       "Telefonía fija",
-      "Anticipo $100 al domiciliar"
+  
     ]
   },
 
@@ -24,7 +24,7 @@ const paquetes = [
       "Fibra óptica",
       "Velocidad simétrica",
       "Telefonía fija",
-      "Anticipo $100 al domiciliar"
+      
     ]
   },
 
