@@ -82,7 +82,7 @@ const paquetes = [
       "Xview+",
       "Más de 80 canales HD",
       "Amazon Prime"
-      "Netflix"
+      
     ]
   },
 
