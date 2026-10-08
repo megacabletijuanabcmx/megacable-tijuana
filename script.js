@@ -6,7 +6,7 @@ const paquetes = [
     grupo: "doble",
     velocidad: "200",
     precio: "350",
-    periodo: "al mes x 12 meses",
+    periodo: "al mes x 6 meses",
     caracteristicas: [
       "Fibra óptica",
       "Velocidad simétrica",
@@ -19,7 +19,7 @@ const paquetes = [
     grupo: "doble",
     velocidad: "300",
     precio: "450",
-    periodo: "al mes x 12 meses",
+    periodo: "al mes x 6 meses",
     caracteristicas: [
       "Fibra óptica",
       "Velocidad simétrica",
@@ -32,12 +32,12 @@ const paquetes = [
     grupo: "doble",
     velocidad: "500",
     precio: "650",
-    periodo: "al mes x 12 meses",
+    periodo: "al mes x 6 meses",
     caracteristicas: [
       "Fibra óptica",
       "Velocidad simétrica",
       "Telefonía fija",
-      "WiFi Ultra incluido"
+      
     ]
   },
 
@@ -45,12 +45,12 @@ const paquetes = [
     grupo: "doble",
     velocidad: "1000",
     precio: "850",
-    periodo: "al mes x 12 meses",
+    periodo: "al mes x 6 meses",
     caracteristicas: [
       "Fibra óptica",
       "Velocidad simétrica",
       "Telefonía fija",
-      "WiFi Ultra incluido"
+      
     ]
   },
 
@@ -74,7 +74,7 @@ const paquetes = [
     grupo: "triple",
     velocidad: "300",
     precio: "600",
-    periodo: "al mes x 12 meses",
+    periodo: "al mes x 6 meses",
     caracteristicas: [
       "Fibra óptica",
       "Velocidad simétrica",
@@ -82,6 +82,7 @@ const paquetes = [
       "Xview+",
       "Más de 80 canales HD",
       "Amazon Prime"
+      "Netflix"
     ]
   },
 
@@ -89,7 +90,7 @@ const paquetes = [
     grupo: "triple",
     velocidad: "500",
     precio: "800",
-    periodo: "al mes x 12 meses",
+    periodo: "al mes x 6 meses",
     caracteristicas: [
       "Fibra óptica",
       "Velocidad simétrica",
