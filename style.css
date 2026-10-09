@@ -194,3 +194,28 @@ footer .small { font-size: 12px; margin-top: 12px; }
     box-sizing: border-box;
   }
 }
+/* Enlace al artículo del blog */
+.blog-link {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 28px 20px;
+  text-align: center;
+  background: #f4f7fb;
+  border-radius: 14px;
+}
+
+.blog-link h2 {
+  color: #002752;
+}
+
+.blog-link a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #407EC9;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.blog-link a:hover {
+  text-decoration: underline;
+}
