@@ -33,7 +33,7 @@ a { text-decoration: none; color: inherit; }
 
 .hero {
   min-height: 620px; display: flex; align-items: center; padding: 70px 7%;
-  background: linear-gradient(135deg, rgba(0, 43, 114, .85), rgba(11, 78, 145, .75)), url('portada.jpg');
+  background: linear-gradient(135deg, rgba(0, 43, 114, .85), rgba(11, 78, 145, .75)), url('portada.webp');
   background-size: cover; background-position: center; background-repeat: no-repeat; color: white;
 }
 .hero-content { max-width: 750px; }
