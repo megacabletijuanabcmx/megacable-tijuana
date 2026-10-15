@@ -321,9 +321,8 @@ footer .small { font-size: 12px; margin-top: 12px; }
     padding: 24px 20px;
     border-radius: 18px;
   }
-}
-
-.wifi-ultra-image {
+  
+img.wifi-ultra-image{
   display: block;
   width: 100%;
   max-width: 280px;
