@@ -90,10 +90,20 @@ function crearPaquete(paquete) {
         <div class="price">$${paquete.precio.toLocaleString("es-MX")}<small>${paquete.periodo}</small></div>
         <p class="regular-price">Después de la promoción: <strong>$${paquete.precioRegular.toLocaleString("es-MX")}/mes</strong></p>
         <p class="deposit">Anticipo indicado: $${paquete.anticipo}</p>
+        
         <ul class="package-features">
           ${paquete.caracteristicas.map(item => `<li>${item}</li>`).join("")}
         </ul>
+
+        ${paquete.grupo === "triple" ? `
+          <div class="package-streaming">
+            <img src="netflix-incluido.png" alt="Netflix incluido">
+            <img src="prime-incluido.png" alt="Amazon Prime incluido">
+          </div>
+        ` : ""}
+
         <a class="package-btn" href="${whatsapp}" target="_blank" rel="noopener noreferrer">Solicitar información</a>
+         
       </div>
     </article>
   `;
