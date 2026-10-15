@@ -331,13 +331,33 @@ img.wifi-ultra-image{
   margin: 0 auto 15px;
   border-radius: 10px;
 }
-  /* Centrar la tarjeta de WiFi Ultra */
-.addon-grid .addon {
+  /* Centrar toda la sección de WiFi Ultra */
+.addons .addon-grid {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 100%;
+}
+
+.addons .addon-grid .addon {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+max-width: 360px;
+margin: 0 auto;
+text-align: center;
+box-sizing: border-box;
+}
+
+.addons .addon-grid .addon h3,
+.addons .addon-grid .addon strong,
+.addons .addon-grid .addon p {
+width: 100%;
 text-align: center;
 }
 
-/* Centrar y ajustar la imagen de WiFi Ultra */
-.addon-grid .addon img.wifi-ultra-image {
+.addons .addon-grid .addon img.wifi-ultra-image {
 display: block;
 width: 100%;
 max-width: 180px;
@@ -345,11 +365,3 @@ height: auto;
 margin: 15px auto;
 object-fit: contain;
 }
-
-/* Mantener centrados el precio y la descripción */
-.addon-grid .addon h3,
-.addon-grid .addon strong,
-.addon-grid .addon p {
-text-align: center;
-}
-
