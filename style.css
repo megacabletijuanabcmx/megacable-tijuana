@@ -321,14 +321,3 @@ footer .small { font-size: 12px; margin-top: 12px; }
     border-radius: 18px;
   }
 }
-
-.wifi-ultra-image {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  object-fit: contain;
-  margin: 0 auto 18px;
-  border-radius: 12px;
-}
-
