@@ -192,10 +192,10 @@ footer .small { font-size: 12px; margin-top: 12px; }
   .packages-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 650px) {
-  .header { padding: 15px 5%; }
+  .header { height: 52px !important; padding: 0 4% !important; }
   .nav { display: none; }
-  .logo img { width: 90px; }
-  .header-whatsapp { font-size: 13px; padding: 9px 13px; }
+  .logo img { height: 36px !important; width: auto !important; }
+  .header-whatsapp { font-size: 12px; padding: 5px 12px !important; }
   .hero { min-height: 550px; padding: 60px 6%; }
   .hero h1 { font-size: 44px; }
   .hero p { font-size: 17px; }
