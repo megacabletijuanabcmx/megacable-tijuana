@@ -314,6 +314,15 @@ footer .small { font-size: 12px; margin-top: 12px; }
   margin: 0;
 }
 
+@media (max-width: 650px) {
+  .streaming-plus {
+    width: calc(100% - 28px);
+    margin: 30px auto;
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+}
+
 .wifi-ultra-image {
   display: block;
   width: 100%;
@@ -324,12 +333,3 @@ footer .small { font-size: 12px; margin-top: 12px; }
   border-radius: 10px;
 }
 
-
-@media (max-width: 650px) {
-  .streaming-plus {
-    width: calc(100% - 28px);
-    margin: 30px auto;
-    padding: 24px 20px;
-    border-radius: 18px;
-  }
-}
