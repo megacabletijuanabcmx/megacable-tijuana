@@ -96,7 +96,7 @@ a { text-decoration: none; color: inherit; }
 .faq details p { margin: 15px 0 0; line-height: 1.7; color: #475467; }
 
 /* ==========================================================================
-   SECCIÓN DE SERVICIOS ADICIONALES (CORREGIDA Y TOTALMENTE CENTRADA)
+   SECCIÓN DE SERVICIOS ADICIONALES (OPTIMIZADA PARA MÓVILES Y CENTRADA)
    ========================================================================== */
 .addons { 
   background: white; 
@@ -107,24 +107,23 @@ a { text-decoration: none; color: inherit; }
   margin: auto; 
   display: flex;          
   flex-direction: column; 
-  align-items: center;    /* Centra la tarjeta completa en la pantalla */
+  align-items: center;    
   justify-content: center;
   gap: 25px; 
+  width: 100%;            /* Asegura que el contenedor use todo el ancho */
 }
 
 .addon { 
   width: 100%;
   max-width: 600px;       
-  padding: 35px 24px; 
+  padding: 35px 20px;     /* Reducido ligeramente el espacio interno lateral */
   border: 1px solid #e1eaf4; 
   border-radius: 20px; 
   background: white;
-  
-  /* Forzar alineación central para todo el bloque */
   display: flex !important;
   flex-direction: column !important; 
-  align-items: center !important;    /* Obliga a los textos e imagen a ir al centro */
-  text-align: center !important;     /* Asegura el centrado de cada línea de texto */
+  align-items: center !important;    
+  text-align: center !important;     
 }
 
 /* Título WiFi Ultra */
@@ -146,11 +145,11 @@ a { text-decoration: none; color: inherit; }
   width: 100%;
 }
 
-/* Imagen / Banner azul de WiFi Ultra */
+/* Imagen / Banner azul de WiFi Ultra (Modificada para crecer en móvil) */
 .wifi-ultra-image {
-  width: 100%;
-  max-width: 500px;       
-  height: auto;
+  width: 100% !important;   /* Obliga a la imagen a expandirse al ancho de su contenedor */
+  max-width: 500px;         /* Evita que se haga gigante en pantallas de computadora */
+  height: auto !important;  /* Mantiene la proporción correcta sin deformarse */
   display: block;
   border-radius: 12px;    
   margin: 0 auto 20px auto !important; 
@@ -165,6 +164,7 @@ a { text-decoration: none; color: inherit; }
   max-width: 480px;       
   text-align: center !important;
   display: block;
+  width: 100%;
 }
 
 .contact-section { padding: 90px 7%; background: var(--dark-blue); color: white; text-align: center; }
