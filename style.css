@@ -419,13 +419,15 @@ margin: 15px auto;
 object-fit: contain;
 }
 /* ==========================================================================
-   TARJETA MEGA MÓVIL CON IMAGEN (TOTALMENTE RESPONSIVA)
-   ========================================================================== */
+   TARJETA MEGA MÓVIL (IMAGEN TOTALMENTE CENTRADA EN TODO TIPO DE PANTALLA)
+   ========================================================================= */
 .mega-movil-card {
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
+  align-items: center !important;    /* Centra los hijos horizontalmente */
+  justify-content: center !important;
   text-align: center !important;
+  margin: 0 auto !important;          /* Centra la tarjeta completa en su espacio */
 }
 
 .addon-tag {
@@ -435,23 +437,25 @@ object-fit: contain;
   color: var(--orange);
   text-transform: uppercase;
   margin-bottom: 5px;
+  width: 100%;
 }
 
-/* Control del ancho de la imagen */
+/* Forzar el centrado absoluto de la imagen en escritorio y móvil */
 .mega-movil-image {
   width: 100% !important;
-  max-width: 500px;
+  max-width: 500px !important;
   height: auto !important;
-  display: block;
+  display: block !important;
   border-radius: 12px;
-  margin: 0 auto 20px auto !important;
+  margin: 0 auto 20px auto !important; /* El "auto" a los lados fuerza el centrado horizontal */
 }
 
 /* Botón naranja personalizado */
 .mega-movil-btn {
   background: var(--orange) !important;
-  margin-top: 15px;
+  margin: 15px auto 0 auto !important; /* Centra el botón horizontalmente */
   width: 100%;
+  max-width: 100%;
   transition: transform 0.2s;
 }
 
@@ -478,6 +482,7 @@ object-fit: contain;
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
+    margin: 0 auto 20px auto !important;
   }
 }
   
