@@ -44,7 +44,7 @@ const paquetes = [
     periodo: "al mes x 6 meses",
     precioRegular: 600,
     anticipo: 200,
-    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos", "Amazon Prime", "Netflix"]
+    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos"]
   },
   {
     grupo: "triple",
@@ -53,7 +53,7 @@ const paquetes = [
     periodo: "al mes x 6 meses",
     precioRegular: 700,
     anticipo: 200,
-    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos", "Amazon Prime", "Netflix"]
+    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos"]
   },
   {
     grupo: "triple",
@@ -62,7 +62,7 @@ const paquetes = [
     periodo: "al mes x 6 meses",
     precioRegular: 900,
     anticipo: 200,
-    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos", "Amazon Prime", "Netflix"]
+    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos"]
   },
   {
     grupo: "triple",
@@ -71,7 +71,7 @@ const paquetes = [
     periodo: "al mes x 6 meses",
     precioRegular: 1100,
     anticipo: 200,
-    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos", "Amazon Prime", "Netflix"]
+    caracteristicas: ["Internet simétrico", "Fibra óptica", "Telefonía fija", "Xview+", "Más de 120 canales interactivos"]
   }
 ];
 
