@@ -241,3 +241,94 @@ footer .small { font-size: 12px; margin-top: 12px; }
   border-radius: 8px;
   object-fit: contain;
 }
+
+/* STREAMING PLUS: contenido unido en una sola tarjeta */
+.streaming-plus {
+  display: block;
+  width: calc(100% - 32px);
+  max-width: 850px;
+  margin: 45px auto;
+  padding: 35px;
+  background: var(--white);
+  border: 1px solid #e1eaf4;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(0, 39, 82, 0.08);
+}
+
+.streaming-plus-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.streaming-plus-label {
+  display: block;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.streaming-plus h2 {
+  color: var(--dark-blue);
+  font-size: clamp(27px, 4vw, 38px);
+  line-height: 1.2;
+  margin: 0 0 14px;
+  overflow-wrap: break-word;
+}
+
+.streaming-plus-highlight {
+  color: var(--blue);
+  font-size: clamp(19px, 3vw, 23px);
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0 0 22px;
+}
+
+.streaming-plus-image {
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.streaming-plus-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.streaming-plus-description {
+  color: #475467;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 15px;
+}
+
+.streaming-plus-legal {
+  color: var(--gray);
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 650px) {
+  .streaming-plus {
+    width: calc(100% - 28px);
+    margin: 30px auto;
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+}
+
+.wifi-ultra-image {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 18px;
+  border-radius: 12px;
+}
+
