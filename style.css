@@ -321,38 +321,27 @@ footer .small { font-size: 12px; margin-top: 12px; }
     padding: 24px 20px;
     border-radius: 18px;
   }
-  
-img.wifi-ultra-image{
-  display: block;
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  object-fit: contain;
-  margin: 0 auto 15px;
-  border-radius: 10px;
-}
-  /* Centrar toda la sección de WiFi Ultra */
+  /* Centrar la tarjeta de WiFi Ultra en escritorio */
 .addons .addon-grid {
-display: flex;
+display: grid;
+grid-template-columns: minmax(0, 360px);
 justify-content: center;
-align-items: flex-start;
 width: 100%;
+max-width: 100%;
+margin: 0 auto;
 }
 
 .addons .addon-grid .addon {
-display: flex;
-flex-direction: column;
-align-items: center;
 width: 100%;
-max-width: 360px;
-margin: 0 auto;
+min-width: 0;
 text-align: center;
-box-sizing: border-box;
+padding: 35px;
 }
 
 .addons .addon-grid .addon h3,
 .addons .addon-grid .addon strong,
 .addons .addon-grid .addon p {
+display: block;
 width: 100%;
 text-align: center;
 }
