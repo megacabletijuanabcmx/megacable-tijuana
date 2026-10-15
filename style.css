@@ -96,7 +96,7 @@ a { text-decoration: none; color: inherit; }
 .faq details p { margin: 15px 0 0; line-height: 1.7; color: #475467; }
 
 /* ==========================================================================
-   SECCIÓN DE SERVICIOS ADICIONALES (CORREGIDA Y CENTRADA)
+   SECCIÓN DE SERVICIOS ADICIONALES (CORREGIDA Y TOTALMENTE CENTRADA)
    ========================================================================== */
 .addons { 
   background: white; 
@@ -105,58 +105,67 @@ a { text-decoration: none; color: inherit; }
 .addon-grid { 
   max-width: 900px; 
   margin: auto; 
-  display: flex;          /* Cambiado de grid a flex para poder centrar */
-  flex-direction: column; /* Organiza el contenido en dirección vertical */
-  align-items: center;    /* Centra la tarjeta horizontalmente en la pantalla */
+  display: flex;          
+  flex-direction: column; 
+  align-items: center;    /* Centra la tarjeta completa en la pantalla */
+  justify-content: center;
   gap: 25px; 
 }
 
 .addon { 
   width: 100%;
-  max-width: 600px;       /* Limita el ancho de la tarjeta para que no se estire de más */
+  max-width: 600px;       
   padding: 35px 24px; 
   border: 1px solid #e1eaf4; 
   border-radius: 20px; 
-  text-align: center; 
-  display: flex;
-  flex-direction: column; /* Alinea los textos y la imagen uno abajo del otro */
-  align-items: center;    /* Centra todos los elementos internos horizontalmente */
+  background: white;
+  
+  /* Forzar alineación central para todo el bloque */
+  display: flex !important;
+  flex-direction: column !important; 
+  align-items: center !important;    /* Obliga a los textos e imagen a ir al centro */
+  text-align: center !important;     /* Asegura el centrado de cada línea de texto */
 }
 
 /* Título WiFi Ultra */
 .addon h3 { 
   font-size: 28px; 
-  margin: 0 0 5px 0; 
+  margin: 0 auto 5px auto !important; 
   color: var(--dark-blue);
+  text-align: center !important;
+  width: 100%;
 }
 
 /* Precio $50 al mes */
 .addon strong { 
   font-size: 25px; 
   color: var(--blue); 
-  display: block;
-  margin-bottom: 20px; /* Separa el precio de la imagen azul */
+  display: block !important;
+  margin: 0 auto 20px auto !important; 
+  text-align: center !important;
+  width: 100%;
 }
 
 /* Imagen / Banner azul de WiFi Ultra */
 .wifi-ultra-image {
   width: 100%;
-  max-width: 500px;       /* Controla el tamaño máximo del banner en computadoras */
+  max-width: 500px;       
   height: auto;
   display: block;
-  border-radius: 12px;    /* Suaviza los bordes de la imagen */
-  margin: 0 auto 20px auto; /* Centra la imagen y le da espacio con el texto inferior */
+  border-radius: 12px;    
+  margin: 0 auto 20px auto !important; 
 }
 
 /* Texto legal inferior */
 .addon p { 
-  margin-top: 0; 
+  margin: 0 auto !important; 
   color: var(--gray); 
   font-size: 14px;
   line-height: 1.5;
-  max-width: 480px;       /* Evita que el texto de abajo se haga demasiado ancho */
+  max-width: 480px;       
+  text-align: center !important;
+  display: block;
 }
-
 
 .contact-section { padding: 90px 7%; background: var(--dark-blue); color: white; text-align: center; }
 .contact-content { max-width: 650px; margin: auto; }
