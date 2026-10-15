@@ -220,3 +220,21 @@ footer .small { font-size: 12px; margin-top: 12px; }
 .blog-link a:hover {
   text-decoration: underline;
 }
+
+/* Logotipos de streaming en Triple Pack */
+.package-streaming {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.package-streaming img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
