@@ -95,13 +95,68 @@ a { text-decoration: none; color: inherit; }
 .faq summary { cursor: pointer; font-weight: 700; line-height: 1.5; }
 .faq details p { margin: 15px 0 0; line-height: 1.7; color: #475467; }
 
-.addons { background: white; }
-.addon-grid { max-width: 900px; margin: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; }
-.addon { padding: 35px; border: 1px solid #e1eaf4; border-radius: 20px; text-align: center; }
-.addon-icon { font-size: 35px; color: var(--orange); font-weight: 900; }
-.addon h3 { font-size: 28px; margin: 10px; }
-.addon strong { font-size: 25px; color: var(--blue); }
-.addon p { margin-top: 10px; color: var(--gray); }
+/* ==========================================================================
+   SECCIÓN DE SERVICIOS ADICIONALES (CORREGIDA Y CENTRADA)
+   ========================================================================== */
+.addons { 
+  background: white; 
+}
+
+.addon-grid { 
+  max-width: 900px; 
+  margin: auto; 
+  display: flex;          /* Cambiado de grid a flex para poder centrar */
+  flex-direction: column; /* Organiza el contenido en dirección vertical */
+  align-items: center;    /* Centra la tarjeta horizontalmente en la pantalla */
+  gap: 25px; 
+}
+
+.addon { 
+  width: 100%;
+  max-width: 600px;       /* Limita el ancho de la tarjeta para que no se estire de más */
+  padding: 35px 24px; 
+  border: 1px solid #e1eaf4; 
+  border-radius: 20px; 
+  text-align: center; 
+  display: flex;
+  flex-direction: column; /* Alinea los textos y la imagen uno abajo del otro */
+  align-items: center;    /* Centra todos los elementos internos horizontalmente */
+}
+
+/* Título WiFi Ultra */
+.addon h3 { 
+  font-size: 28px; 
+  margin: 0 0 5px 0; 
+  color: var(--dark-blue);
+}
+
+/* Precio $50 al mes */
+.addon strong { 
+  font-size: 25px; 
+  color: var(--blue); 
+  display: block;
+  margin-bottom: 20px; /* Separa el precio de la imagen azul */
+}
+
+/* Imagen / Banner azul de WiFi Ultra */
+.wifi-ultra-image {
+  width: 100%;
+  max-width: 500px;       /* Controla el tamaño máximo del banner en computadoras */
+  height: auto;
+  display: block;
+  border-radius: 12px;    /* Suaviza los bordes de la imagen */
+  margin: 0 auto 20px auto; /* Centra la imagen y le da espacio con el texto inferior */
+}
+
+/* Texto legal inferior */
+.addon p { 
+  margin-top: 0; 
+  color: var(--gray); 
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 480px;       /* Evita que el texto de abajo se haga demasiado ancho */
+}
+
 
 .contact-section { padding: 90px 7%; background: var(--dark-blue); color: white; text-align: center; }
 .contact-content { max-width: 650px; margin: auto; }
