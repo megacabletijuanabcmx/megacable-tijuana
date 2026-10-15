@@ -418,3 +418,66 @@ height: auto;
 margin: 15px auto;
 object-fit: contain;
 }
+/* ==========================================================================
+   TARJETA MEGA MÓVIL CON IMAGEN (TOTALMENTE RESPONSIVA)
+   ========================================================================== */
+.mega-movil-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.addon-tag {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* Control del ancho de la imagen */
+.mega-movil-image {
+  width: 100% !important;
+  max-width: 500px;
+  height: auto !important;
+  display: block;
+  border-radius: 12px;
+  margin: 0 auto 20px auto !important;
+}
+
+/* Botón naranja personalizado */
+.mega-movil-btn {
+  background: var(--orange) !important;
+  margin-top: 15px;
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.mega-movil-btn:hover {
+  background: var(--dark-blue) !important;
+  transform: translateY(-2px);
+}
+
+/* Nota legal específica de telefonía */
+.mega-movil-card .addon-note {
+  margin: 0 auto !important;
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 480px;
+  text-align: center !important;
+  display: block;
+  width: 100%;
+}
+
+/* Adaptación para pantallas de celular */
+@media (max-width: 650px) {
+  .mega-movil-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}
+  
