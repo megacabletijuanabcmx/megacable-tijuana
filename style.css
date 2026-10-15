@@ -293,8 +293,9 @@ footer .small { font-size: 12px; margin-top: 12px; }
 .streaming-plus-image img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 450px;
   height: auto;
+  margin: 0 auto;
   border-radius: 12px;
   object-fit: contain;
 }
@@ -312,6 +313,17 @@ footer .small { font-size: 12px; margin-top: 12px; }
   line-height: 1.6;
   margin: 0;
 }
+
+.wifi-ultra-image {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+}
+
 
 @media (max-width: 650px) {
   .streaming-plus {
