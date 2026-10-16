@@ -475,8 +475,7 @@ object-fit: contain;
   display: block;
   width: 100%;
 }
-
-/* Adaptación para pantallas de celular */
+  /* Adaptación para pantallas de celular */
 @media (max-width: 650px) {
   .mega-movil-image {
     width: 100% !important;
@@ -485,4 +484,4 @@ object-fit: contain;
     margin: 0 auto 20px auto !important;
   }
 }
-  
+}
