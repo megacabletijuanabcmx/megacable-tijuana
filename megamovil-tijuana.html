@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Mega Móvil en Tijuana | Megacable Celular</title>
+    <meta name="description" content="Conoce los planes de telefonía celular Mega Móvil de Megacable en Tijuana. Planes familiares e individuales con redes sociales ilimitadas y hasta 30GB.">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --primary-blue: #002f6c;
+            --megacable-blue: #0056b3;
+            --orange: #ff6600;
+            --gray-bg: #f8f9fa;
+            --text-muted: #6c757d;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header-seo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header-seo h1 {
+            color: var(--primary-blue);
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        .header-seo p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .section-title {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #000;
+            margin: 40px 0 25px 0;
+        }
+        .carousel-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .arrow-btn {
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            color: #ccc;
+            cursor: pointer;
+            padding: 10px;
+            transition: color 0.2s;
+        }
+        .arrow-btn:hover { color: var(--orange); }
+        .planes-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+        .plan-card {
+            background: var(--gray-bg);
+            border-radius: 24px;
+            padding: 30px 20px;
+            text-align: center;
+            flex: 1;
+            min-width: 260px;
+            max-width: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .plan-type {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .plan-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #000;
+            margin: 0 0 15px 0;
+        }
+        .plan-features {
+            font-size: 1.05rem;
+            color: #000;
+            line-height: 1.4;
+            margin-bottom: 25px;
+        }
+        .plan-features span {
+            display: block;
+            margin: 4px 0;
+        }
+        .feature-subtext {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: 4px;
+        }
+        .price-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 2px;
+        }
+        .price-amount {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #000;
+            margin: 0;
+        }
+        .price-period {
+            font-size: 0.85rem;
+            color: #666;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .price-note {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
+        .action-btn {
+            display: block;
+            background: #ffffff;
+            color: #0056b3;
+            border: 2px solid #0056b3;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+        .action-btn:hover {
+            background: #0056b3;
+            color: #ffffff;
+        }
+        .global-features {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 500px;
+            padding: 0 20px;
+        }
+        .global-features h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #000;
+            line-height: 1.4;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .social-icons i {
+            font-size: 1.2rem;
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .fa-facebook-f { color: #1877f2; }
+        .fa-x-twitter { color: #000000; }
+        .fa-whatsapp { color: #25d366; }
+        .fa-instagram { color: #e1306c; }
+        .fa-facebook-messenger { color: #0084ff; }
+        .fa-telegram { color: #229ed9; }
+        .footer-seo-info {
+            background: var(--gray-bg);
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 50px;
+            color: #444;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <header class="header-seo">
+            <h1>Planes Mega Móvil en Tijuana</h1>
+            <p>Conserva tu mismo número y disfruta de redes sociales ilimitadas, minutos y SMS con la red de Megacable.</p>
+        </header>
+        <div class="section-title">Planes Familiares</div>
+        <div class="carousel-wrapper">
+            <button class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="planes-grid">
+                <div class="plan-card">
+                    <div>
+                        <div class="plan-type">Plan Familiar</div>
+                        <div class="plan-title">2 Líneas</div>
+                        <div class="plan-features">
+                            <span>1 línea de 30GB*</span>
+                            <span style="font-weight:300; color:var(--text-muted); margin: 2px 0;">+</span>
+                            <span>1 línea de 6GB*</span>
+                            <span class="feature-subtext">Conservando tu número</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="price-label">Por solo</div>
+                        <p class="price-amount">$270</p>
+                        <span class="price-period">Al mes</span>
+                        <a href="https://wa.me" class="action-btn">¡Lo quiero!</a>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div>
+                        <div class="plan-type">Plan Familiar</div>
+                        <div class="plan-title">3 Líneas</div>
+                        <div class="plan-features">
+                            <span>1 línea de 30GB*</span>
+                            <span style="font-weight:300; color:var(--text-muted); margin: 2px 0;">+</span>
+                            <span>2 líneas de 6GB*</span>
+                            <span class="feature-subtext">Conservando tu número</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="price-label">Por solo</div>
+                        <p class="price-amount">$360</p>
+                        <span class="price-period">Al mes</span>
+                        <a href="https://wa.me" class="action-btn">¡Lo quiero!</a>
+                    </div>
+                                </div>
+            </div>
+            <button class="arrow-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <!-- AQUÍ EMPIEZA LA SECCIÓN LIMPIA DE REDES SOCIALES -->
+        <div class="global-features">
+            <h3>Todos los planes cuentan con<br>Redes sociales ilimitadas*<br>+ minutos y sms</h3>
+            <div class="social-icons">
+                <img src="ico-facebook-2.svg" alt="Facebook" style="width: 35px; height: 35px; background: #f8f9fa; border-radius: 50%; padding: 4px; box-sizing: border-box;">
+                <img src="ico-x-2.svg" alt="X" style="width: 35px; height: 35px; background: #f8f9fa; border-radius: 50%; padding: 4px; box-sizing: border-box;">
+                <img src="ico-instagram-2.svg" alt="Instagram" style="width: 35px; height: 35px; background: #f8f9fa; border-radius: 50%; padding: 4px; box-sizing: border-box;">
+                <img src="ico-whatsapp-2.svg" alt="WhatsApp" style="width: 35px; height: 35px; background: #f8f9fa; border-radius: 50%; padding: 4px; box-sizing: border-box;">
+                <img src="ico-snapchat-2.svg" alt="Snapchat" style="width: 35px; height: 35px; background: #f8f9fa; border-radius: 50%; padding: 4px; box-sizing: border-box;">
+                <img src="ico-telegram-2.svg" alt="Telegram" style="width: 35px; height: 35px; background: #f8f9fa; border-radius: 50%; padding: 4px; box-sizing: border-box;">
+                <img src="ico-messenger-2.svg" alt="Messenger" style="width: 35px; height: 35px; background: #f8f9fa; border-radius: 50%; padding: 4px; box-sizing: border-box;">
+            </div>
+        </div>
+
+        <div class="section-title">Planes Individuales</div>
+        <div class="carousel-wrapper">
+            <button class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="planes-grid">
+                <div class="plan-card">
+                    <div>
+                        <div class="plan-type">Mega Móvil</div>
+                        <div class="plan-title">Esencial</div>
+                        <div class="plan-features">
+                            <span style="font-size:2rem; font-weight:800; margin-bottom:0;">6GB*</span>
+                            <span class="feature-subtext" style="font-size:0.95rem; margin-top:-5px; color:#000; font-weight: 600;">para navegar</span>
+                            <span style="font-weight:300; color:var(--text-muted); margin:4px 0;">+</span>
+                            <span style="font-weight:600;">Redes Sociales ILIMITADAS*</span>
+                            <span style="font-weight:300; color:var(--text-muted); margin:4px 0;">+</span>
+                            <span>Minutos y SMS incluidos</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="price-label">Por solo</div>
+                        <p class="price-amount">$100</p>
+                        <span class="price-period">al mes</span>
+                        <span class="price-note">*Adicionales a tu mensualidad</span>
+                        <a href="https://wa.me" class="action-btn">¡Lo quiero!</a>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div>
+                        <div class="plan-type">Mega Móvil</div>
+                        <div class="plan-title">Conectado</div>
+                        <div class="plan-features">
+                            <span style="font-size:2rem; font-weight:800; margin-bottom:0;">30GB*</span>
+                            <span class="feature-subtext" style="font-size:0.95rem; margin-top:-5px; color:#000; font-weight: 600;">para navegar</span>
+                            <span style="font-weight:300; color:var(--text-muted); margin:4px 0;">+</span>
+                            <span style="font-weight:600;">Redes Sociales ILIMITADAS*</span>
+                            <span style="font-weight:300; color:var(--text-muted); margin:4px 0;">+</span>
+                            <span>Minutos y SMS incluidos</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="price-label">Por solo</div>
+                        <p class="price-amount">$200</p>
+                        <span class="price-period">al mes</span>
+                        <span class="price-note">*Adicionales a tu mensualidad</span>
+                        <a href="https://wa.me" class="action-btn">¡Lo quiero!</a>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <footer class="footer-seo-info">
+            <h4 style="margin-top:0; color:var(--primary-blue); font-size:1.1rem;">¿Cómo contratar planes Mega Móvil en Tijuana, Baja California?</h4>
+            <p style="margin-bottom:0; font-size:0.95rem;">Para activar cualquiera de estos paquetes de telefonía celular, solicita una validación de compatibilidad para tus equipos telefónicos. Conserva tu mismo número mediante portabilidad y disfruta de la cobertura de fibra óptica y red celular móvil en las principales colonias de Tijuana.</p>
+        </footer>
+      
+        <!-- SECCIÓN COMPATIBILIDAD DE EQUIPOS E IMEI -->
+        <section style="margin-top: 60px; font-family: 'Segoe UI', Roboto, sans-serif; color: #333;">
+            
+            <!-- Banner Superior Informativo -->
+            <div style="width: 100%; max-width: 900px; margin: 0 auto 40px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <img src="0__imagen_1765406468.png" alt="Mega Móvil te mantiene informado" style="width: 100%; display: block; height: auto;">
+            </div>
+
+            <!-- Títulos Principales Centrados -->
+            <div style="text-align: center; margin-bottom: 40px; padding: 0 10px;">
+                <h2 style="color: #002f6c; font-size: 1.8rem; font-weight: 800; margin-bottom: 5px;">
+                    Equipos compatibles
+                </h2>
+                <h3 style="color: #002f6c; font-size: 2.1rem; font-weight: 800; margin-top: 0; margin-bottom: 15px; line-height: 1.2;">
+                    ¿Cómo obtener el código IMEI de tu celular?
+                </h3>
+                <p style="color: #666; font-size: 1.1rem; margin: 0;">
+                    Existen tres opciones para obtener el IMEI
+                </p>
+            </div>
+            <!-- Contenedor de los 3 Pasos con tus imágenes -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 950px; margin: 0 auto 50px auto; padding: 0 15px;">
+                
+                <!-- Opción 1: Marcar *#06# -->
+                <div style="flex: 1; min-width: 250px; max-width: 280px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <img src="1-cel.png" alt="Marcar código IMEI" style="width: 160px; height: 160px; object-fit: contain; margin-bottom: 20px;">
+                    <p style="font-size: 1.1rem; line-height: 1.4; color: #333; margin: 0;">
+                        <strong style="color: #000; font-weight: 800; display: block; font-size: 1.2rem; margin-bottom: 4px;">Marca *#06#</strong> 
+                        desde tu celular
+                    </p>
+                </div>
+
+                <!-- Opción 2: Configuración del equipo -->
+                <div style="flex: 1; min-width: 250px; max-width: 280px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <img src="2-tuerca.png" alt="Configuración del celular" style="width: 160px; height: 160px; object-fit: contain; margin-bottom: 20px;">
+                    <p style="font-size: 1.1rem; line-height: 1.4; color: #333; margin: 0;">
+                        Desde la <strong style="color: #000; font-weight: 800; display: block; font-size: 1.2rem; margin-bottom: 4px; margin-top: -4px;">configuración de tu equipo</strong> 
+                        <span style="color: #666; font-size: 0.95rem; display: block; margin-top: 5px;">(Son entre 15 y 17 números)</span>
+                    </p>
+                </div>
+
+                <!-- Opción 3: Impreso en la etiqueta -->
+                <div style="flex: 1; min-width: 250px; max-width: 280px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <img src="3-imei.png" alt="IMEI impreso" style="width: 160px; height: 160px; object-fit: contain; margin-bottom: 20px;">
+                    <p style="font-size: 1.1rem; line-height: 1.4; color: #333; margin: 0;">
+                        <strong style="color: #000; font-weight: 800; display: block; font-size: 1.2rem; margin-bottom: 4px;">Impreso en la etiqueta</strong> 
+                        de la batería de tu dispositivo 
+                        <span style="color: #666; font-size: 0.95rem; display: block; margin-top: 5px;">(O en la caja)</span>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+          </html>
+          
